@@ -22,5 +22,12 @@ public class LinkedListMain {
         Integer popLastData = linkedList2.popLast();
         System.out.println("\n" + popLastData);
         linkedList2.display();
+        Node<Integer> searchData = linkedList2.search(3);
+        if (searchData != null){
+            System.out.println("\nData Found");
+        }
+        else {
+            System.out.println("\nData Not Found");
+        }
     }
 }
