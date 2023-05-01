@@ -55,4 +55,15 @@ public class LinkedList<T> {
         tail = temp;
         return popLastData;
     }
+
+    public Node<T> search(T data) {
+        Node<T> temp = head;
+        while (temp != null) {
+            if (temp.data.equals(data)) {
+                return temp;
+            }
+            temp = temp.next;
+        }
+        return null;
+    }
 }
