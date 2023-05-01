@@ -44,4 +44,15 @@ public class LinkedList<T> {
         head = head.next;
         return popData;
     }
+
+    public T popLast() {
+        T popLastData = tail.data;
+        Node<T> temp = head;
+        while (temp.next != tail){
+            temp = temp.next;
+        }
+        temp.next = null;
+        tail = temp;
+        return popLastData;
+    }
 }

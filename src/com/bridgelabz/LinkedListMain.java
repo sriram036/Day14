@@ -19,5 +19,8 @@ public class LinkedListMain {
         linkedList2.append(30);
         linkedList2.append(70);
         linkedList2.display();
+        Integer popLastData = linkedList2.popLast();
+        System.out.println("\n" + popLastData);
+        linkedList2.display();
     }
 }
