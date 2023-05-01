@@ -37,4 +37,11 @@ public class LinkedList<T> {
             tail = newNode;
         }
     }
+
+
+    public T pop() {
+        T popData = head.data;
+        head = head.next;
+        return popData;
+    }
 }
